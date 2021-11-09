@@ -4,6 +4,7 @@ import (
 	"gin_bluebell/controllers"
 	"gin_bluebell/pkg/jwt"
 	"github.com/gin-gonic/gin"
+	"go.uber.org/zap"
 	"strings"
 )
 
@@ -14,6 +15,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		// 这里假设Token放在Header的Authorization中，并使用Bearer开头
 		// 这里的具体实现方式要依据你的实际业务情况决定
 		authHeader := c.Request.Header.Get("Authorization")
+		zap.L().Info("Authorization",zap.String("Authorization",authHeader))
 		if authHeader == "" {
 			controllers.ResponseError(c,controllers.CodeNeedLogin)
 			c.Abort()
@@ -22,6 +24,7 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		// 按空格分割
 		parts := strings.SplitN(authHeader, " ", 2)
 		if !(len(parts) == 2 && parts[0] == "Bearer") {
+			zap.L().Error("Bearer field ")
 			controllers.ResponseError(c,controllers.CodeInvalidToken)
 			c.Abort()
 			return
@@ -29,9 +32,11 @@ func JWTAuthMiddleware() func(c *gin.Context) {
 		// parts[1]是获取到的tokenString，我们使用之前定义好的解析JWT的函数来解析它
 		mc, err := jwt.ParseToken(parts[1])
 		if err != nil {
+			zap.L().Error("ParseToken field ",zap.Error(err),zap.String("TOKEN",parts[1]))
 			controllers.ResponseError(c,controllers.CodeInvalidToken)
 			c.Abort()
 			return
+
 		}
 		// 将当前请求的username信息保存到请求的上下文c上
 		c.Set(controllers.CtxUserIDKey, mc.UserID)
