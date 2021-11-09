@@ -1,0 +1,95 @@
+{"level":"ERROR","time":"2021-11-03T21:23:26.066+0800","caller":"controllers/user.go:66","msg":"login with invalid param","username":"lpj2","password":"lpj2017814","error":"密码错误"}
+{"level":"INFO","time":"2021-11-03T21:23:26.066+0800","caller":"logger/logger.go:74","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.007926871}
+{"level":"INFO","time":"2021-11-03T21:24:54.452+0800","caller":"gin_bluebell/main.go:86","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-03T21:24:54.454+0800","caller":"gin_bluebell/main.go:94","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-03T21:24:54.454+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-03T21:25:29.015+0800","caller":"logger/logger.go:74","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.00793238}
+{"level":"ERROR","time":"2021-11-06T19:33:31.968+0800","caller":"controllers/user.go:18","msg":"singUp with invalid param","error":"Key: 'ParamSingnUp.password' Error:Field validation for 'password' failed on the 'required' tag\nKey: 'ParamSingnUp.re_password' Error:Field validation for 're_password' failed on the 'required' tag"}
+{"level":"INFO","time":"2021-11-06T19:33:31.970+0800","caller":"logger/logger.go:74","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.002130255}
+{"level":"INFO","time":"2021-11-06T19:38:42.364+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-06T19:38:42.367+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-06T19:38:42.369+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-06T19:48:46.773+0800","caller":"logger/logger.go:74","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.030544286}
+{"level":"INFO","time":"2021-11-06T20:28:55.502+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-06T20:28:55.508+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-06T20:28:55.509+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-06T20:54:51.800+0800","caller":"logger/logger.go:74","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.007469639}
+{"level":"INFO","time":"2021-11-07T13:32:48.405+0800","caller":"logger/logger.go:74","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.012235797}
+{"level":"INFO","time":"2021-11-07T13:35:20.340+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T13:35:20.343+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T13:35:20.344+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T14:44:37.804+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T14:44:37.808+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T14:44:37.808+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T14:46:16.946+0800","caller":"logger/logger.go:74","msg":"/login","status":200,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.072572528}
+{"level":"INFO","time":"2021-11-07T15:12:26.935+0800","caller":"logger/logger.go:74","msg":"/login","status":404,"method":"POST","path":"/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.00000347}
+{"level":"INFO","time":"2021-11-07T15:12:44.454+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.016785255}
+{"level":"INFO","time":"2021-11-07T15:14:16.275+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:14:16.277+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:14:16.277+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:14:25.275+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.00911901}
+{"level":"INFO","time":"2021-11-07T15:16:13.058+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:16:13.062+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:16:13.062+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:16:49.313+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.01584997}
+{"level":"INFO","time":"2021-11-07T15:18:20.633+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","errors":"","cost":0.017013088}
+{"level":"INFO","time":"2021-11-07T15:18:20.726+0800","caller":"logger/logger.go:74","msg":"/api/v1/posts2","status":404,"method":"GET","path":"/api/v1/posts2","query":"page=1&order=time","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","errors":"","cost":0.000032614}
+{"level":"INFO","time":"2021-11-07T15:22:11.073+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:22:11.075+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:22:11.076+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:22:19.591+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.027131347}
+{"level":"INFO","time":"2021-11-07T15:23:58.212+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:23:58.215+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:23:58.216+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:24:06.081+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.009760194}
+{"level":"INFO","time":"2021-11-07T15:24:37.707+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:24:37.709+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:24:37.710+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:24:44.721+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.010160084}
+{"level":"INFO","time":"2021-11-07T15:31:27.096+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:31:27.098+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:31:27.099+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:31:41.436+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.012628067}
+{"level":"INFO","time":"2021-11-07T15:33:27.356+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:33:27.358+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:33:27.359+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:33:54.227+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.026716162}
+{"level":"INFO","time":"2021-11-07T15:34:34.446+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:34:34.448+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:34:34.448+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:34:40.782+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.01384898}
+{"level":"INFO","time":"2021-11-07T15:35:41.729+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:35:41.731+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:35:41.732+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:35:51.231+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.009576865}
+{"level":"INFO","time":"2021-11-07T15:36:12.859+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:36:12.861+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:36:12.862+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:36:56.663+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.037088285}
+{"level":"INFO","time":"2021-11-07T15:38:00.740+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:38:00.741+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:38:00.741+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:38:09.563+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.010626693}
+{"level":"INFO","time":"2021-11-07T15:38:33.694+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:38:33.696+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:38:33.697+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:38:41.123+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.006333336}
+{"level":"INFO","time":"2021-11-07T15:38:49.760+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-07T15:38:49.761+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-07T15:38:49.762+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-07T15:39:05.304+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.011596791}
+{"level":"INFO","time":"2021-11-07T15:40:49.692+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","errors":"","cost":0.006899665}
+{"level":"INFO","time":"2021-11-07T15:40:49.861+0800","caller":"logger/logger.go:74","msg":"/api/v1/posts2","status":404,"method":"GET","path":"/api/v1/posts2","query":"page=1&order=time","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","errors":"","cost":0.000018974}
+{"level":"INFO","time":"2021-11-08T21:08:28.957+0800","caller":"gin_bluebell/main.go:82","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-11-08T21:08:28.969+0800","caller":"gin_bluebell/main.go:90","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-11-08T21:08:28.972+0800","caller":"gin_bluebell/main.go:38","msg":"init mysql failed err","error":"sync /dev/stdout: inappropriate ioctl for device"}
+{"level":"INFO","time":"2021-11-08T21:55:50.762+0800","caller":"logger/logger.go:74","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.000172939}
+{"level":"INFO","time":"2021-11-08T21:56:21.715+0800","caller":"logger/logger.go:74","msg":"/api/v1/login","status":200,"method":"POST","path":"/api/v1/login","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.012348999}
+{"level":"INFO","time":"2021-11-08T21:56:31.550+0800","caller":"logger/logger.go:74","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.04171627}
+{"level":"INFO","time":"2021-11-08T21:57:33.108+0800","caller":"logger/logger.go:74","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.004060498}
+{"level":"INFO","time":"2021-11-08T21:59:42.910+0800","caller":"logger/logger.go:74","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.004591772}
+{"level":"INFO","time":"2021-11-08T22:00:15.977+0800","caller":"logger/logger.go:74","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.007206819}
+{"level":"INFO","time":"2021-11-08T22:01:03.367+0800","caller":"logger/logger.go:74","msg":"/api/v1/community","status":200,"method":"GET","path":"/api/v1/community","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.003793796}
+{"level":"INFO","time":"2021-11-08T22:23:07.132+0800","caller":"logger/logger.go:74","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.008217643}
+{"level":"INFO","time":"2021-11-08T22:24:22.208+0800","caller":"logger/logger.go:74","msg":"/api/v1/community/1","status":200,"method":"GET","path":"/api/v1/community/1","query":"","ip":"127.0.0.1","user-agent":"PostmanRuntime/7.26.10","errors":"","cost":0.006707964}
+{"level":"INFO","time":"2021-11-09T21:24:26.379+0800","caller":"logger/logger.go:74","msg":"/api/v1/posts2","status":404,"method":"GET","path":"/api/v1/posts2","query":"page=1&order=time","ip":"127.0.0.1","user-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36","errors":"","cost":0.00000077}
