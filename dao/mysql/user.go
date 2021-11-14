@@ -56,3 +56,12 @@ func encryptPassword(opassword string) string  {
 	h.Write([]byte(secret))
 	return hex.EncodeToString(h.Sum([]byte(opassword)))
 }
+
+//获取用户信息
+func GetUserById(uid int64)(user *models.User,err error)  {
+	user = new(models.User)
+	sqlStr := "select user_id,username from user where user_id = ?"
+	err = db.Get(user,sqlStr,uid)
+	return
+
+}

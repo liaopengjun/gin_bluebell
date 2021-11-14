@@ -9,7 +9,6 @@ const (
 	CodeUserNotExist
 	CodeInvalidPassword
 	CodeServerBusy
-
 	CodeNeedLogin
 	CodeInvalidToken
 

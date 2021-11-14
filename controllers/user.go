@@ -76,7 +76,7 @@ func LoginHandler(c *gin.Context){
 	//3.返回响应
 	ResponseSuccess(c, gin.H{
 		"username":p.Username,
-		"accessToken":  aToken,
+		"token":  aToken,
 		"refreshToken": rToken,
 	})
 }
