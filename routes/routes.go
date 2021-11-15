@@ -30,7 +30,9 @@ func SetupRouter( model string) *gin.Engine {
 		v1.GET("/community",controllers.CommunityHandler)
 		v1.GET("/community/:id",controllers.CommunityDetailHandler)
 		v1.POST("/post",controllers.CreatePostHandler)
-		v1.POST("/post/:id",controllers.CreatePostDetailHandler)
+		v1.GET("/post/:id",controllers.CreatePostDetailHandler)
+		v1.GET("/posts",controllers.PostListHandler)
+		v1.POST("/vote", controllers.PostVoteController)
 	}
 	return r
 }
