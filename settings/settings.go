@@ -30,7 +30,6 @@ type RedisConfig struct {
 	Port         int    `mapstructure:"port"`
 	DB           int    `mapstructure:"db"`
 	PoolSize     int    `mapstructure:"pool_size"`
-	MinIdleConns int    `mapstructure:"min_idle_conns"`
 }
 type LogConfig struct {
 	Level      string `mapstructure:"level"`

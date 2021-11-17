@@ -9,7 +9,7 @@ import (
 type ResponseData struct {
 	Code ResCode `json:"code"`
 	Message interface{} `json:"message"`
-	Data interface{} `json:"data"`
+	Data interface{} `json:"data,omitempty"`
 }
 
 // ResponseError定义返回错误信息
