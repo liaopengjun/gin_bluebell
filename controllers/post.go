@@ -8,6 +8,8 @@ import (
 	"strconv"
 )
 
+
+
 func CreatePostHandler(c *gin.Context)  {
 	//1.获取参数校验
 	p := new(models.Post)
@@ -52,6 +54,30 @@ func CreatePostDetailHandler(c *gin.Context)  {
 func PostListHandler(c *gin.Context) {
 	page,size := getPageInfo(c)
 	data,err := logic.GetPostList(page,size)
+	if err != nil {
+		zap.L().Error("logic.GetPostList() failed",zap.Error(err))
+		ResponseError(c,CodeServerBusy)
+		return
+	}
+	ResponseSuccess(c,data)
+}
+
+// PostListHandler2 升级帖子列表接口
+func PostListHandler2(c *gin.Context) {
+	//按照接口参数条件排序 时间或分数
+	//初始化帖子列表参数结构体
+	p := &models.ParamPostList{
+		Page:  1,
+		Size:  10,
+		Order: models.OrderTime,
+	}
+	if err := c.ShouldBindQuery(p);err !=nil{
+		zap.L().Error("PostListHandler2 with failed err ",zap.Error(err))
+		ResponseError(c,CodeInvalidParam)
+		return
+	}
+	//获取列表数据
+	data,err := logic.GetPostList2(p)
 	if err != nil {
 		zap.L().Error("logic.GetPostList() failed",zap.Error(err))
 		ResponseError(c,CodeServerBusy)

@@ -74,3 +74,12 @@ func GetPostList(page,size int64) (data []*models.ApiPostDetail,err error) {
 	}
 	return
 }
+
+func GetPostList2(p *models.ParamPostList)  {
+	//去redis查询id列表
+	ids,err := redis.GetPostIDsInOrder(p)
+	if err != nil{
+		return
+	}
+	//根据id查询数据库帖子信息
+}

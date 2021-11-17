@@ -2,7 +2,6 @@ package redis
 
 import (
 	"errors"
-	"fmt"
 	"github.com/go-redis/redis"
 	"math"
 	"time"
@@ -59,7 +58,6 @@ func VoteForPost(userID,postID string,value float64) error {
 	pipeline.ZIncrBy(getRedisKey(KeyPostScoreZSet), op*diff*scorePerVote, postID)//给当前帖子更新分数
 	//3.记录用户为该帖子投票数据
 	if value == 0 {
-		fmt.Println("1111")
 		pipeline.ZRem(getRedisKey(KeyPostVotedZSetPrefix+postID),userID)
 	} else{
 		pipeline.ZAdd(getRedisKey(KeyPostVotedZSetPrefix+postID), redis.Z{

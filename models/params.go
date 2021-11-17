@@ -1,5 +1,10 @@
 package models
 
+const (
+	OrderTime = "time"
+	OrderScore = "score"
+)
+
 //定义请求的参数结构体
 type ParamSingnUp struct {
 	Username string `json:"username" binding:"required"`

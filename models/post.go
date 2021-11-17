@@ -18,3 +18,10 @@ type ApiPostDetail struct {
 	*Post 								//帖子结构体
 	*CommunityDetail `json:"community"` //社区信息
 }
+
+// 帖子列表参数
+type ParamPostList struct {
+	Page int64 `json:"page" form:"page"`
+	Size int64 `json:"size" form:"size"`
+	Order string `json:"order" form:"order"`
+}

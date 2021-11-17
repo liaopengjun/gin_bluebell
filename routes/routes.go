@@ -33,6 +33,7 @@ func SetupRouter( model string) *gin.Engine {
 		v1.GET("/post/:id",controllers.CreatePostDetailHandler)
 		v1.GET("/posts",controllers.PostListHandler)
 		v1.POST("/vote", controllers.PostVoteController)
+		v1.GET("/posts2",controllers.PostListHandler2)
 	}
 	return r
 }
