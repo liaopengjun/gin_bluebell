@@ -8,8 +8,6 @@ import (
 	"strconv"
 )
 
-
-
 func CreatePostHandler(c *gin.Context)  {
 	//1.获取参数校验
 	p := new(models.Post)
@@ -71,7 +69,7 @@ func PostListHandler2(c *gin.Context) {
 		Size:  10,
 		Order: models.OrderTime,
 	}
-	if err := c.ShouldBindQuery(p);err !=nil{
+	if err := c.ShouldBindQuery(p);err != nil {
 		zap.L().Error("PostListHandler2 with failed err ",zap.Error(err))
 		ResponseError(c,CodeInvalidParam)
 		return

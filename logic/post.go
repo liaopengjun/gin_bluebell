@@ -7,6 +7,7 @@ import (
 	"gin_bluebell/pkg/snowflake"
 	"go.uber.org/zap"
 )
+
 //  CreatePost 创建帖子
 func CreatePost(p *models.Post)(err error)  {
 	//1.生成post_id
@@ -86,6 +87,9 @@ func GetPostList2(p *models.ParamPostList)  (data []*models.ApiPostDetail,err er
 	}
 	//根据id查询数据库帖子信息
 	posts ,err := mysql.GetPostListByIDs(ids)
+
+	//zap.L().Debug("ids data",zap.Any("ids",ids))
+	//zap.L().Debug("post data",zap.Any("postdata",posts))
 	for _,post := range posts {
 		//查询作者信息
 		user,err := mysql.GetUserById(int64(post.AuthorId))
