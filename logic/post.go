@@ -1,6 +1,7 @@
 package logic
 
 import (
+	"fmt"
 	"gin_bluebell/dao/mysql"
 	"gin_bluebell/dao/redis"
 	"gin_bluebell/models"
@@ -25,7 +26,12 @@ func CreatePost(p *models.Post)(err error)  {
 // GetPostById 返回帖子详情
 func GetPostById(pid int64)(data *models.ApiPostDetail,err error)  {
 	//组合数据
+	fmt.Println(pid)
 	post,err := mysql.GetPostById(pid)
+	if err != nil{
+		zap.L().Error("mysql.GetPostById failed",zap.Int64("author_id", int64(post.AuthorId)),zap.Error(err))
+		return
+	}
 	//查询作者信息
 	user,err := mysql.GetUserById(int64(post.AuthorId))
 	if err != nil{

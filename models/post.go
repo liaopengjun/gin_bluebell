@@ -4,7 +4,7 @@ import "time"
 
 //内存对齐 int->string->time->.......
 type Post struct {
-	ID          int64     `json:"id" db:"post_id"`
+	ID          int64     `json:"id,string" db:"post_id"`
 	Status      int32     `json:"status" db:"status"`
 	CommunityID int64     `json:"community_id" db:"community_id" binding:"required"`
 	AuthorId    uint64    `json:"author_id" db:"author_id" binding:"required"`
